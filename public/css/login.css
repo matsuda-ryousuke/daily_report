@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* user agent stylesheet無効化 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ここからcss */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6em;
+}
+
+#form {
+    width: 350px;
+    margin: 50px auto 20px;
+    padding: 15px;
+    border: 1px solid #555;
+}
+.manual-link {
+    width: 350px;
+    margin: 0 auto 50px;
+    text-align: right;
+}
+.manual-link a {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+form p {
+    font-size: 14px;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.email,
+.pass {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.submit {
+    text-align: right;
+}
+/* layout */
+
+
+form p {
+    font-size: 14px;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.mail,
+.pass {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.submit {
+    text-align: right;
+}
+
+/* font */
+#form p {
+    color: #077685;
+    font-weight: bold;
+}
+
+#form .form-title {
+    font-family: Arial;
+    font-size: 30px;
+    color: #4eb4c2;
+}
+
+/* skin */
+#form {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 1px 10px #488a9e;
+    -moz-box-shadow: 0px 1px 10px #488a9e;
+    box-shadow: 0px 1px 10px #488a9e;
+    border: solid #4eb4c2 1px;
+    background: #fafafa;
+}
+
+#form .form-title {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #4eb4c2;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    display: block; /* ブロック要素にします */
+    overflow: hidden; /* はみ出ないようにします */
+    width: 6.5em;
+    height: 2.85em; /* 表示領域を指定するためheigthも指定 */
+    margin: 0 0 0 auto;
+    padding: 0;
+    background: url(../img/btn103.png) 0 -0.1em no-repeat;
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    outline: none;
+}
+.login-button:hover {
+    /* hover時のイベント */
+    background-position: 0 -2.65em; /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+}
+
+header {
+    height: 55px;
+    position: relative;
+    padding: 6px 0 10px;
+    background-color: #007aac;
+    border-bottom: 1px solid #165e83;
+}
+
+.password {
+    width: 300px;
+    padding: 4px;
+    font-size: 14px;
+}
+.login {
+    size: 800%;
+}
+
+@media screen and (min-width: 480px) {
+    /* 　　携帯横のcss書く */
+    #form {
+        width: 400px;
+        margin: 0 auto 20px;
+        padding: 20px;
+        box-sizing: initial;
+    }
+    .manual-link {
+        width: 442px;
+        margin: 0 auto;
+        text-align: right;
+    }
+    .manual-link a {
+        font-size: 14px;
+    }
+    .manual-link a:hover {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .body {
+        /* width: 350px; */
+        margin: 50px auto;
+        padding: 10px;
+    }
+}
+
+section.main {
+    background: #e7f0f7;
+    border: 0;
+    padding: 0;
+}
+#error_box {
+    margin: 25px auto;
+}

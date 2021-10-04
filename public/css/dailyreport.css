@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* @import url("base.css"); */
+
+/* @import url("usertouroku.css"); */
+
+body {
+    background: #e7f0f7;
+}
+
+h1 {
+    width: 100%;
+    color: #007aac;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 0 0px 23px;
+    margin: 0 auto 15px !important;
+    border-bottom: 2px solid #007aac;
+    background: url(../img/mark.png) no-repeat;
+    background-size: 18px;
+    background-position: 0% 85%;
+}
+
+/*
+padding: 40px 0 5px 23px; ->	padding: 10px 0 0px 23px;
+margin: 0 auto 30px !important; -> 	margin: 0 auto 15px !important;
+*/
+
+.bottom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.btn-detail {
+    text-align: center;
+    margin: 8px 0px 10px;
+}
+
+.btn-return-img {
+    background: url(../img/btn108.png) 0 0 no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+}
+
+.btn-history-img {
+    background: url(../img/btn106.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.btn-register-img {
+    background: url(../img/btn106.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.btn-confirm-img {
+    background: url(../img/btn107.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.cnt_area.cnt_danger {
+    color: #FF0000;
+}
+
+.cnt_area.cnt_warning {
+    color: #f1c01f;
+}
+
+.cnt_area2.cnt_danger {
+    color: #FF0000;
+}
+
+.cnt_area2.cnt_warning {
+    color: #f1c01f;
+}
+
+/*
+		a.csssprite3{
+			background: url(../img/btn107.png);
+			width:96px;
+			height:41px;
+			margin-left: 20px;
+			display: block;
+			cursor:pointer;
+			text-align:center;
+			color:#fff;
+			}
+
+			a.csssprite3:hover{
+			background-position:center bottom;
+			} */
+
+/* label {
+				margin: unset;
+				text-align-last: justify ;
+			} */
+
+/* .col-form-label {
+			padding-top: calc(.375rem + 1px);
+			padding-bottom: calc(.375rem + 1px);
+			margin-bottom: unset;
+			font-size: inherit;
+			line-height: 1.5;
+		} */
+
+section {
+    padding: 0 0 10px 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .report-form {
+        font-size: 16px;
+    }
+}
+
+.pg-confirm-btn .cmn-btn-image {
+    width: 5.6em;
+    height: 2.4em;
+}
+
+.pg-confirm-btn .cmn-btn-image:hover {
+    background-position: 0 -2.35em;
+}
+
+@media screen and (min-width: 768px) {
+    .pg-confirm-btn .cmn-btn-image {
+        width: 6.6em;
+        height: 2.8em;
+    }
+    .pg-confirm-btn .cmn-btn-image:hover {
+        background-position: 0 -2.8em;
+    }
+}

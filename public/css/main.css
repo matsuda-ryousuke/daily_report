@@ -1,0 +1,393 @@
+.btn-toggle {
+    text-align: center;
+}
+
+.btn-toggle p {
+    display: block;
+    /* ブロック要素にします */
+    overflow: hidden;
+    /* はみ出ないようにします */
+    width: 200px;
+    height: 40px;
+    /* 表示領域を指定するためheigthも指定 */
+    margin: 0 auto;
+    background: url(../img/btn100.png) 0 -1px no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.btn-toggle p:hover {
+    /* hover時のイベント */
+    background-position: 0 -41px;
+    /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+}
+
+.search-contents {
+    margin-top: 15px;
+}
+
+.newreport {
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    right: 10%;
+}
+
+.newreport:hover {
+    /* hover時のイベント */
+    background-position: 0 -47px;
+    /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+}
+
+@media screen and (min-width:768px) {
+    .newreport {
+        display: none;
+    }
+}
+
+.search-open-img {
+    width: 200px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+@media screen and (min-width:768px) {
+    section.main {
+        padding: 30px 0;
+    }
+}
+
+section.sec-contents {
+    padding: 0;
+}
+
+.search-contents {
+    border: 2px solid;
+    border-color: #b3d0d7;
+    background-color: #dbedf0;
+    font-size: 1.1em;
+}
+
+button.btn-search {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+button.btn-search-reset {
+    display: block;
+    /* ブロック要素にします */
+    overflow: hidden;
+    /* はみ出ないようにします */
+    width: 6.5em;
+    height: 2.75em;
+    /* 表示領域を指定するためheigthも指定 */
+    margin: 0 auto;
+    background: url(../img/btn104.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    outline: none;
+}
+
+button.btn-search-reset:hover {
+    /* hover時のイベント */
+    background-position: 0 -2.75em;
+    /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+}
+
+button.btn-search-submit {
+    display: block;
+    /* ブロック要素にします */
+    overflow: hidden;
+    /* はみ出ないようにします */
+    width: 6.5em;
+    height: 2.75em;
+    /* 表示領域を指定するためheigthも指定 */
+    margin: 0 auto;
+    background: url(../img/btn105.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    outline: none;
+}
+
+button.btn-search-submit:hover {
+    /* hover時のイベント */
+    background-position: 0 -2.75em;
+    /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.search-item {
+    margin: 15px 5px 2px 15px;
+    font-weight: bold;
+}
+
+.search-ttl {
+    margin-bottom: 5px;
+}
+
+.search-box {
+    margin: 0px 5px 2px 8px;
+}
+.search-updown {
+    text-align: center;
+}
+
+.search-box select,
+.search-box input {
+    padding-left: 5px;
+}
+
+.search-item-wrap input.long-box {
+    margin: 0px 15px;
+    width: 90%;
+    height: 35px;
+}
+
+.search-box p {
+    text-align: center;
+}
+
+.search-item-wrap input.short-box {
+    width: 50px;
+    margin-left: 10px;
+    height: 35px;
+}
+
+.search-item-wrap select {
+    margin: 0px 15px;
+    width: 90%;
+    height: 35px;
+}
+
+label.search-new {
+    width: 60px;
+}
+
+.search-btn {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.search-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.3em;
+    color: #007aac;
+    /* width: ; */
+    margin: 0 auto;
+    padding: 30px 0 2px 0;
+    border-bottom: solid 2px #b3d0d7;
+    background: url(../img/mark.png) no-repeat;
+    background-size: 1em;
+    background-position: 0% 85%;
+}
+
+.h1-wrap {
+    position: relative;
+}
+
+select.line-up {
+    position: absolute;
+    bottom: 5px;
+    left: 120px;
+    width: 6em;
+    height: 1.75em;
+}
+
+@media screen and (min-width:768px) {
+    h1.search-list {
+        padding: 30px 0 5px 0;
+    }
+    select.line-up {
+        position: absolute;
+        bottom: 7px;
+    }
+}
+
+.list-item {
+    font-size: 1em;
+}
+
+span.reports-list-ttl {
+    margin: 25px;
+}
+
+.btn-detail {
+    text-align: center;
+    margin: 8px 0px 10px;
+}
+
+/*
+li .ttl{
+    font-weight: bolder;
+} */
+
+.result-contents {
+    border-bottom: solid 1px;
+}
+
+.list-item.client-area {
+    font-size: 1.1em;
+    border-top: double #b3d0d7;
+    border-width: 5px;
+    border-bottom: solid 2px #b3d0d7;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #dbedf0;
+    margin-top: 8px;
+}
+
+/* スマホ横以上で表示 */
+
+@media screen and (min-width:480px) {
+    .list-item.name-date {
+        display: none;
+    }
+    .list-item.summary {
+        display: none;
+    }
+    .large-list-item.large-screen-list {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.2em;
+        margin-top: 5px;
+    }
+    .large-list-item.large-name {
+        margin-left: 1.3em;
+    }
+    .large-list-item.large-summary {
+        margin-left: auto;
+    }
+    body {
+        font-size: 1.7em;
+    }
+    .search-list {
+        size: 1.8em;
+    }
+}
+
+/* スマホサイズでは表示しないもの */
+
+@media screen and (max-width:480px) {
+    .large-list-item.large-screen-list {
+        display: none;
+    }
+}
+
+span.list-item.term {
+    float: right;
+}
+
+.list-item.name-date {
+    padding: 6px 3px 5px 3px;
+}
+
+.list-item.summary {
+    padding: 5px 3px 5px 3px;
+}
+
+li.list-indivi {
+    border-bottom: solid 2px #b3d0d7;
+    margin-bottom: 7px;
+}
+
+.list-indivi .btn-detail .img-detail {
+    width: 70px;
+}
+
+a.btn-detail-img {
+    display: block;
+    /* ブロック要素にします */
+    overflow: hidden;
+    /* はみ出ないようにします */
+    width: 70px;
+    height: 30px;
+    /* 表示領域を指定するためheigthも指定 */
+    margin: 0 auto;
+    background: url(../img/btn101.png) 0 0 no-repeat;
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    outline: none;
+}
+
+a.btn-detail-img:hover {
+    /* hover時のイベント */
+    background-position: 0 -30px;
+    /* 横は0　縦に-100pxずらす 起点は左上なので注意*/
+}
+
+#scroll_to_top {
+    /* 「TOPに戻る」ボタンにカーソルを載せた時に、
+    カーソルが指のマークになるようにしています。 */
+    cursor: pointer;
+    /* 常にページの右下に表示されるように固定します。 */
+    position: fixed;
+    /* 位置を固定させます。 */
+    right: 20px;
+    /* 画面の右橋から20px空けます。 */
+    bottom: 20px;
+    /* 画面の下端から20px空けます。 */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #007aac;
+    display: none;
+}
+#scroll_to_top:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin-left: -5px;
+    margin-top: -3px;
+}
+#scroll_to_top p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+}
+
+.text-cut {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.corp-text-cut {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    width: 70%;
+}
+
+.large-text-cut {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    width: 40%;
+}
+.search-result {
+    padding: 15px 0;
+}
