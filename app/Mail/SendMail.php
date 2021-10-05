@@ -31,7 +31,7 @@ class SendMail extends Mailable
     {
         // 送信元、送信する内容の設定
         return $this->text('emails.email')
-                    ->from('noreply@heartsnext.jp', 'heartsnext')
+                    ->from('noreply@example.jp', 'xxx')
                     ->subject($this->day . 'の日報について')
                     ->with(['count' => $this->count]);
     }

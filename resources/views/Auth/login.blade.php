@@ -38,6 +38,4 @@
         </form>
     </div>
 </div>
-<div class="manual-link"><a href="{{url('/')}}/manual/manual.pdf" target="_blank"
-        rel="noopener noreferrer">マニュアルはこちら</a></div>
 @endsection

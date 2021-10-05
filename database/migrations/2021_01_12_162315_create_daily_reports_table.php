@@ -13,6 +13,8 @@ class CreateDailyReportsTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('daily_reports');
+
         Schema::create('daily_reports', function (Blueprint $table) {
             $table->Increments('log_report_id');
             $table->Integer('unique_report_id')->unsigned();

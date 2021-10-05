@@ -24,8 +24,7 @@
 
 <body>
     <header>
-        <p class="homelink"><a href="{{route('main')}}"><span><img src="{{ asset('/img/logo1.png') }}" alt="HEARTS NEXT"
-                        class="logo"></span><span></span></a></p>
+        <p class="homelink"><a href="{{route('main')}}"><span>xxx</span></a></p>
 
         @if(Auth::check())
         <p class="userdisp">
@@ -37,8 +36,6 @@
                         alt="日報登録"></a></li>
             <li class="even"><a href="{{route('report.index')}}"><img src="{{ asset('/img/menu03.png') }}"
                         alt="検索･日報一覧"></a></li>
-            <li class="odd"><a href="{{url('/')}}/manual/manual.pdf" target="_blank" rel="noopener noreferrer"><img
-                        src="{{ asset('/img/menu05.png') }}" alt="マニュアル"></a></li>
             <li class="logout"><a href="{{route('user.logout')}}"><img src="{{ asset('/img/logout.png') }}"
                         alt="ログアウト"></a></li>
         </ul>
@@ -51,8 +48,6 @@
                 <ul id="splist">
                     <li><a href="{{route('report.create')}}">日報登録</a></li>
                     <li><a href="{{route('report.index')}}">検索･日報一覧</a></li>
-                    <li><a href="{{url('/')}}/manual/manual.pdf" target="_blank" rel="noopener noreferrer">マニュアル</a>
-                    </li>
                     <li><a href="{{route('user.logout')}}">ログアウト</a></li>
                 </ul>
             </div>
@@ -63,7 +58,7 @@
         @yield('body')
     </section>
     <footer class='tac'>
-        <small>Hearts next</small>
+        <small>xxx</small>
     </footer>
 </body>
 

@@ -13,6 +13,8 @@ class CreateReportsListTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('reports_list');
+
         Schema::create('reports_list', function (Blueprint $table) {
             $table->increments('unique_report_id');
             $table->Integer('log_report_id')->unsigned();

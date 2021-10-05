@@ -13,6 +13,8 @@ class CreateReadsTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('reads');
+
         Schema::create('reads', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->smallInteger('user_id');
